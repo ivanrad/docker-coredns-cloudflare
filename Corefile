@@ -1,0 +1,9 @@
+# proxy/forward to Cloudflare DNS-over-TLS
+.:53 {
+	forward . tls://1.1.1.1 tls://1.0.0.1 {
+		tls_servername tls.cloudflare-dns.com
+		policy sequential
+		health_check 5s
+	}
+	log
+}
