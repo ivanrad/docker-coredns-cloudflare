@@ -1,3 +1,5 @@
+[![Automated Status](https://img.shields.io/docker/cloud/automated/ivanrad/coredns-cloudflare.svg)](https://hub.docker.com/r/ivanrad/coredns-cloudflare)
+[![Build Status](https://img.shields.io/docker/cloud/build/ivanrad/coredns-cloudflare.svg)](https://hub.docker.com/r/ivanrad/coredns-cloudflare)
 # docker-coredns-cloudflare
 
 [CoreDNS][coredns-url] in a docker container setup to proxy DNS requests to
