@@ -2,8 +2,8 @@ FROM alpine:latest
 
 WORKDIR /app
 
-ARG COREDNS_VERSION
-ENV COREDNS_VERSION ${COREDNS_VERSION:-1.3.1}
+ARG COREDNS_VERSION=1.4.0
+ENV COREDNS_VERSION ${COREDNS_VERSION}
 
 RUN set -e -o pipefail && \
     apk add --no-cache --virtual deps curl && \
